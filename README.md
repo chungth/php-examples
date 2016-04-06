@@ -1,4 +1,4 @@
-php HTML5, Javascript Example
+Php Example
 ==========
-    To help newbies  get started and quick familiar with PHP, HTML5, Javascript, 
+    To help newbies  get started and quick familiar with PHP, 
     we try to explain them through examples.
