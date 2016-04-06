@@ -1,5 +1,21 @@
 <?php
 
+trait Codable
+{
+    public function code()
+    {
+        echo 'I can code';
+    }
+}
+
+trait Testable
+{
+    public function test()
+    {
+        echo 'I can test';
+    }
+}
+
 class Human
 {
     public function talk()
@@ -25,20 +41,20 @@ class Human
 
 class Developer extends Human
 {
-    public function code()
-    {
-        echo 'I can code';
-    }
+    use Codable;
 }
 
 class Tester extends Human
 {
-    public function test()
-    {
-        echo 'I can code';
-    }
+    use Testable;
+}
+
+class SuperMan extends Human
+{
+    use Codable, Testable;
 }
 
 Human::canDo();
 Developer::canDo();
 Tester::canDo();
+SuperMan::canDo();
